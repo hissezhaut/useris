@@ -24,23 +24,23 @@
         }
 
         public function testDefaultVersionedMethodCall(){
-            $this->_transport->assertNextRequest("POST", "https://api.useris.app/v1/user.get");
+            $this->_transport->assertNextRequest("POST", "https://api.useris.tk/v1/user.get");
             $this->_proxy->user->get();
         }
 
         public function testMethodCall(){
-            $this->_transport->assertNextRequest("POST", "https://api.useris.app/v1/user.get");
+            $this->_transport->assertNextRequest("POST", "https://api.useris.tk/v1/user.get");
             $this->_proxy->v1->user->get();
         }
 
         public function testDeepServiceCall(){
-            $this->_transport->assertNextRequest("POST", "https://api.useris.app/v1/user.invoice.get");
+            $this->_transport->assertNextRequest("POST", "https://api.useris.tk/v1/user.invoice.get");
             $this->_proxy->v1->user->invoice->get();
         }
 
         public function testInsecureMethodCall(){
             $this->_proxy->setOption("secure", false);
-            $this->_transport->assertNextRequest("POST", "http://api.useris.app/v1/user.get");
+            $this->_transport->assertNextRequest("POST", "http://api.useris.tk/v1/user.get");
             $this->_proxy->v1->user->get();
         }
 
@@ -60,13 +60,13 @@
         }
 
         public function testVersionedMethodCall(){
-            $this->_transport->assertNextRequest("POST", "https://api.useris.app/v2/user.get");
+            $this->_transport->assertNextRequest("POST", "https://api.useris.tk/v2/user.get");
             $this->_proxy->v2->user->get();
         }
 
         public function testMethodCallWithArguments(){
             $arguments = array("user_id" => "abc");
-            $this->_transport->assertNextRequest("POST", "https://api.useris.app/v1/user.get", null, json_encode($arguments));
+            $this->_transport->assertNextRequest("POST", "https://api.useris.tk/v1/user.get", null, json_encode($arguments));
             $this->_proxy->user->get($arguments);
         }
 
@@ -77,7 +77,7 @@
                 $test->assertEquals($headers["Content-Type"], "application/json");
             };
 
-            $this->_transport->assertNextRequest("POST", "https://api.useris.app/v1/user.get", $header_test, json_encode($arguments));
+            $this->_transport->assertNextRequest("POST", "https://api.useris.tk/v1/user.get", $header_test, json_encode($arguments));
             $this->_proxy->user->get($arguments);
         }
 
@@ -88,7 +88,7 @@
                 $test->assertEquals($headers["Authorization"], "Basic " . base64_encode("123:"));
             };
 
-            $this->_transport->assertNextRequest("POST", "https://api.useris.app/v1/user.get", $header_test);
+            $this->_transport->assertNextRequest("POST", "https://api.useris.tk/v1/user.get", $header_test);
             $this->_proxy->user->get($arguments);
         }
 
@@ -101,7 +101,7 @@
                 $test->assertEquals($headers["Authorization"], "Basic " . base64_encode("123:321"));
             };
 
-            $this->_transport->assertNextRequest("POST", "https://api.useris.app/v1/user.get", $header_test);
+            $this->_transport->assertNextRequest("POST", "https://api.useris.tk/v1/user.get", $header_test);
             $this->_proxy->user->get($arguments);
         }
 
@@ -117,7 +117,7 @@
                 $test->assertEquals($headers["Authorization"], "Basic " . base64_encode("123:321"));
             };
 
-            $this->_transport->assertNextRequest("POST", "https://api.useris.app/v1/user.get", $header_test);
+            $this->_transport->assertNextRequest("POST", "https://api.useris.tk/v1/user.get", $header_test);
             $this->_proxy->user->get($arguments);
         }
 

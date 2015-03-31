@@ -14,7 +14,7 @@
 			"version" => 1,
 			"app_id" => null,
 			"token" => null,
-			"base_address" => "api.useris.app",
+			"base_address" => "api.useris.tk",
 			"throw_errors" => true,
 			"transport" => null
 		);

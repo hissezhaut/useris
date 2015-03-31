@@ -29,7 +29,7 @@
         }
 
         public function testGetDefaultBaseAddress(){
-            $this->assertEquals($this->_options->base_address, "api.useris.app");
+            $this->assertEquals($this->_options->base_address, "api.useris.tk");
         }
 
         public function testCreateCarbonCopy(){
@@ -58,7 +58,7 @@
             $this->assertEquals($this->_options->debug, false);
             $this->assertEquals($this->_options->secure, true);
             $this->assertEquals($this->_options->version, 1);
-            $this->assertEquals($this->_options->base_address, "api.useris.app");
+            $this->assertEquals($this->_options->base_address, "api.useris.tk");
             $this->assertEquals($this->_options->throw_errors, true);
         }
 

@@ -54,7 +54,7 @@
                 $received_events[] = array('name' => 'error', 'error' => $error);
             });
 
-            $this->_transport->forRequestRespondWith('https://api.useris.app/v1/user.get', array(
+            $this->_transport->forRequestRespondWith('https://api.useris.tk/v1/user.get', array(
                 'data' => 'test'
             ));
             
