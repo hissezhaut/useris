@@ -3,7 +3,7 @@
     "type": "library",
     "description": "PHP client library for Useris.",
     "keywords": ["user management", "user authentication"],
-    "homepage": "http://github.com/useris-io/useris-php",
+    "homepage": "https://github.com/hissezhaut/useris",
     "license": "MIT",
     "authors": [
         {
